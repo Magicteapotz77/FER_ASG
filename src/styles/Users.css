@@ -1,0 +1,239 @@
+.users-page {
+    padding: 30px;
+}
+
+.users-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.users-header h2 {
+    color: #172554;
+    margin-bottom: 8px;
+}
+
+.users-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.users-form-card,
+.users-table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.users-form-card h3,
+.users-table-card h3 {
+    color: #172554;
+    margin-bottom: 20px;
+}
+
+.users-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.users-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.users-form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.users-form-group input,
+.users-form-group select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    background: white;
+}
+
+.users-form-group input:focus,
+.users-form-group select:focus {
+    border-color: #2563eb;
+}
+
+.users-form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.users-form-actions button {
+    padding: 11px 20px;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.users-save-button {
+    background: #2563eb;
+    color: white;
+}
+
+.users-save-button:hover {
+    background: #1d4ed8;
+}
+
+.users-cancel-button {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.users-error {
+    margin-top: 15px;
+    color: #dc2626;
+    font-size: 14px;
+}
+
+.users-success {
+    margin-top: 15px;
+    color: #15803d;
+    font-size: 14px;
+}
+
+.users-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.users-table-header h3 {
+    margin-bottom: 0;
+}
+
+.users-table-header input {
+    width: 300px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    outline: none;
+}
+
+.users-table-header input:focus {
+    border-color: #2563eb;
+}
+
+.users-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+.users-table th,
+.users-table td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+.users-table th {
+    background: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+}
+
+.users-table td {
+    color: #334155;
+}
+
+.role-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.role-badge.admin {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.role-badge.teacher {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.role-badge.user {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.users-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.users-actions button {
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.users-edit-button {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.users-delete-button {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.users-empty {
+    text-align: center !important;
+    padding: 30px !important;
+    color: #94a3b8 !important;
+}
+
+@media (max-width: 768px) {
+    .users-page {
+        padding: 15px;
+    }
+
+    .users-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .users-table-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .users-table-header input {
+        width: 100%;
+    }
+
+    .users-form-card,
+    .users-table-card {
+        padding: 18px;
+    }
+}

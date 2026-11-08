@@ -1,0 +1,223 @@
+.classes-page {
+    width: 100%;
+}
+
+.classes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.classes-header h2 {
+    margin: 0 0 7px;
+    color: #172554;
+    font-size: 26px;
+}
+
+.classes-header p {
+    margin: 0;
+    color: #64748b;
+}
+
+.classes-total {
+    padding: 14px 20px;
+    background: white;
+    border-radius: 10px;
+    color: #64748b;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.classes-total strong {
+    color: #2563eb;
+    margin-left: 5px;
+}
+
+.class-form-card,
+.class-table-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.class-form-card h3,
+.class-table-header h3 {
+    margin: 0 0 22px;
+    color: #172554;
+    font-size: 19px;
+}
+
+.class-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.class-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.class-form-group label {
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.class-form-group input,
+.class-form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+}
+
+.class-form-group input:focus,
+.class-form-group select:focus {
+    border-color: #2563eb;
+}
+
+.class-form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.class-save-button,
+.class-cancel-button,
+.class-edit-button,
+.class-delete-button {
+    border: none;
+    border-radius: 6px;
+    padding: 9px 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.class-save-button {
+    background: #2563eb;
+    color: white;
+}
+
+.class-save-button:hover {
+    background: #1d4ed8;
+}
+
+.class-cancel-button {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.class-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.class-table-header h3 {
+    margin-bottom: 0;
+}
+
+.class-table-header input {
+    width: 240px;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    outline: none;
+}
+
+.class-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 22px;
+}
+
+.class-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.class-table th {
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 13px;
+    padding: 14px;
+}
+
+.class-table td {
+    padding: 15px 14px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    font-size: 14px;
+}
+
+.class-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.class-edit-button {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.class-delete-button {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.class-empty {
+    text-align: center !important;
+    color: #94a3b8 !important;
+    padding: 25px !important;
+}
+
+.class-message {
+    padding: 12px 15px;
+    border-radius: 7px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.class-message.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.class-message.error {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+@media (max-width: 768px) {
+    .classes-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .class-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .class-table-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .class-table-header input {
+        width: 100%;
+    }
+
+    .class-form-card,
+    .class-table-card {
+        padding: 17px;
+    }
+}

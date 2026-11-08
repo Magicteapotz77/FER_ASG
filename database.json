@@ -1,0 +1,139 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "studentCode": "SE194001",
+      "name": "Nguyen Van An",
+      "gender": "Male",
+      "dateOfBirth": "2005-05-10",
+      "email": "an@gmail.com",
+      "phone": "0901234567",
+      "major": "Software Engineering",
+      "class": "SE1947",
+      "status": "Active"
+    },
+    {
+      "id": "2",
+      "studentCode": "SE194002",
+      "name": "Tran Thi Binh",
+      "gender": "Female",
+      "dateOfBirth": "2005-08-15",
+      "email": "binh@gmail.com",
+      "phone": "0902345678",
+      "major": "Artificial Intelligence",
+      "class": "SE1946",
+      "status": "Active"
+    },
+    {
+      "id": "3",
+      "studentCode": "SE194003",
+      "name": "Le Van Cuong",
+      "gender": "Male",
+      "dateOfBirth": "2004-12-20",
+      "email": "cuong@gmail.com",
+      "phone": "0903456789",
+      "major": "Software Engineering",
+      "class": "AI1947",
+      "status": "Inactive"
+    },
+    {
+      "studentCode": "rrr",
+      "name": "ggg",
+      "gender": "Female",
+      "dateOfBirth": "2026-11-18",
+      "email": "rrr@gmail.com",
+      "phone": "0901 234 566",
+      "major": "ttt",
+      "class": "AI1947",
+      "status": "Active",
+      "id": "hu0rhDk18x4"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "1",
+      "subjectCode": "PRJ301",
+      "subjectName": "Java Web Application",
+      "credits": 3
+    },
+    {
+      "id": "2",
+      "subjectCode": "DBI202",
+      "subjectName": "Database Systems",
+      "credits": 3
+    },
+    {
+      "id": "3",
+      "subjectCode": "SWT301",
+      "subjectName": "Software Testing",
+      "credits": 3
+    },
+    {
+      "subjectCode": "FER202",
+      "subjectName": "bla bla",
+      "credits": 3,
+      "id": "_JR925ZtpjA"
+    }
+  ],
+  "grades": [
+    {
+      "id": "1",
+      "studentId": "1",
+      "subjectId": "1",
+      "score": 8.5
+    },
+    {
+      "id": "2",
+      "studentId": "1",
+      "subjectId": "2",
+      "score": 9
+    },
+    {
+      "id": "3",
+      "studentId": "2",
+      "subjectId": "1",
+      "score": 7.5
+    },
+    {
+      "studentId": "1",
+      "subjectId": "2",
+      "score": 1,
+      "id": "UVkFBr6LKMw"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin@1example.com",
+      "password": "123456",
+      "name": "Administrator",
+      "role": "Admin"
+    },
+    {
+      "username": "t1",
+      "name": "das",
+      "role": "Teacher",
+      "assignedClass": "SE1947",
+      "password": "123",
+      "id": "z6S3DFgmJf0"
+    }
+  ],
+  "classes": [
+    {
+      "id": "1",
+      "className": "SE1947",
+      "teacherId": "z6S3DFgmJf0"
+    },
+    {
+      "id": "2",
+      "className": "AI1947",
+      "teacherId": ""
+    },
+    {
+      "id": "3",
+      "className": "SE1946",
+      "teacherId": ""
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

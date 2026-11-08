@@ -1,0 +1,266 @@
+.grades-page {
+    min-height: 100vh;
+    padding: 35px;
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+.grades-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.grades-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 28px;
+}
+
+.grades-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.grades-header p {
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.total-grades {
+    padding: 12px 18px;
+    background: #dbeafe;
+    color: #2563eb;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.grade-form-card,
+.grade-list-card {
+    padding: 25px;
+    background: white;
+    border-radius: 13px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.grade-form-card h3,
+.grade-list-card h3 {
+    margin: 0 0 22px;
+    font-size: 19px;
+}
+
+.grade-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.grade-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grade-form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #475569;
+}
+
+.grade-form-group input,
+.grade-form-group select,
+.grade-search {
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #dbe2ea;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+}
+
+.grade-form-group input:focus,
+.grade-form-group select:focus,
+.grade-search:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.grade-form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.grade-form-buttons button,
+.grade-actions button {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 17px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.grade-btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.grade-btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.grade-btn-cancel {
+    background: #e2e8f0;
+    color: #334155;
+}
+
+.grade-btn-cancel:hover {
+    background: #cbd5e1;
+}
+
+.grade-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.grade-list-header h3 {
+    margin: 0;
+}
+
+.grade-list-header p {
+    color: #64748b;
+    font-size: 13px;
+    margin: 6px 0 0;
+}
+
+.grade-search {
+    max-width: 300px;
+}
+
+.grade-table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.grades-table {
+    width: 100%;
+    min-width: 950px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.grades-table thead {
+    background: #eff6ff;
+    color: #1e40af;
+}
+
+.grades-table th {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #dbeafe;
+}
+
+.grades-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #475569;
+}
+
+.grades-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.grade-code {
+    color: #2563eb !important;
+    font-weight: 600;
+}
+
+.grade-student {
+    color: #1e293b !important;
+    font-weight: 600;
+}
+
+.grade-score {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1e293b !important;
+}
+
+.grade-passed,
+.grade-failed {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.grade-passed {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.grade-failed {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.grade-actions {
+    display: flex;
+    gap: 7px;
+}
+
+.grade-btn-edit {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.grade-btn-edit:hover {
+    background: #fde68a;
+}
+
+.grade-btn-delete {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.grade-btn-delete:hover {
+    background: #fecaca;
+}
+
+.grade-empty {
+    text-align: center;
+    padding: 30px !important;
+    color: #94a3b8 !important;
+}
+
+@media (max-width: 768px) {
+    .grades-page {
+        padding: 18px;
+    }
+
+    .grades-header h1 {
+        font-size: 23px;
+    }
+
+    .grade-form-card,
+    .grade-list-card {
+        padding: 18px;
+    }
+
+    .grade-search {
+        max-width: 100%;
+    }
+}
